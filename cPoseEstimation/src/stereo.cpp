@@ -5,7 +5,6 @@
  *
  *
  */
-#include "stdafx.h"
 #include "utils.h"
 
 Mat camera_matrix,distortion_coefficients;

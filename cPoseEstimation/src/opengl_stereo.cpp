@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "utils.h"
 
 static double a = 0.0;

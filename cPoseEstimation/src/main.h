@@ -35,4 +35,3 @@ double curCam[3] = {0,0,0};
 
 bool running = true;
 
-HANDLE ghMutex; 

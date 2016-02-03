@@ -5,13 +5,12 @@
  *
  *
  */
-#include "stdafx.h"
 #include "main.h"
 
 /**
  * OpenGL thread main function
  */
-void start_opengl(LPVOID p) {
+void start_opengl() {
 	frames[0].copyTo(backPxls);
 	cvtColor(backPxls,backPxls,CV_BGR2RGB);
 	cvFlip(&cvMat(frames[0].rows,frames[0].cols,CV_8UC3,backPxls.data),0,0);
@@ -48,8 +47,6 @@ int main(int i, char** c)
 	vector<Point2f> tmp_pts;
 	vector<uchar> global_status(200,1), snapshot_global_status(200);
 	bool frameByFrame = false;
-
-	HANDLE threadHandle;
 
 	/**
 	 * the number of good points

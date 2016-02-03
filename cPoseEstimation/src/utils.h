@@ -6,6 +6,16 @@
  *
  */
 
+#include <stdio.h>
+#include <GL/glut.h>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/calib3d/calib3d.hpp>
+#include <opencv2/video/video.hpp>
+
+using namespace std;
+using namespace cv;
+
 #define VIDEO_MODE
 
 /** general utility functions **/
@@ -72,4 +82,3 @@ extern Vec3d u,v;
 
 extern bool running;
 
-extern HANDLE ghMutex; 
